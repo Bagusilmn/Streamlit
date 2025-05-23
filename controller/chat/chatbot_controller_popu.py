@@ -1,5 +1,5 @@
 import os
-import request
+import requests
 import streamlit as st
 
 def get_chatbot_response_popu(query):
