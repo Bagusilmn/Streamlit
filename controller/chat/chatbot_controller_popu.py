@@ -4,7 +4,7 @@ import streamlit as st
 
 def get_chatbot_response_popu(query):
     try:
-        response = requests.post("https://beckendapprlo.streamlit.app/chat/popu", json={"question": query})
+        response = requests.post("https://beckendapprlo.streamlit.app", json={"question": query})
 
         # Log respons mentah
         print("Status:", response.status_code)
