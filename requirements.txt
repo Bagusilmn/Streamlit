@@ -12,6 +12,7 @@ folium
 pandas
 numpy
 pymysql
+sqlalchemy
 streamlit_cookies_manager
 plotly_express
 streamlit-aggrid
