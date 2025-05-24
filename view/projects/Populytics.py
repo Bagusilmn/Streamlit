@@ -129,14 +129,14 @@ with colText :
             with st.spinner("Sedang mencari jawaban..."):
                 result = get_chatbot_response_popu(qa, user_query)
                 st.markdown("### Jawaban dari pertanyaan Anda:")
-                st.markdown(result)
+                st.markdown(result, unsafe_allow_html=True)
 
         # Jika user tidak mengisi apapun, tampilkan default query
         elif user_query is None:
             with st.spinner("Sedang mencari jawaban..."):
                 result = get_chatbot_response_popu(default_query)
                 st.markdown("### Rekomendasi Paket untuk Wilayah Ini:")
-                st.markdown(result)
+                st.markdown(result, unsafe_allow_html=True)
                 
 with st.container(border=True):            
     st.title("Pendidikan")
